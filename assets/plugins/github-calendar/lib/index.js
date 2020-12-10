@@ -15,7 +15,7 @@
  *
  * @return {Promise} A promise returned by the `fetch()` call.
  */
-module.exports = function GitHubCalendar (container, username, options) {
+module.exports = function GitHubCalendar(container, username, options) {
     if (typeof container === "string") {
         container = document.querySelector(container);
     }
@@ -29,7 +29,7 @@ module.exports = function GitHubCalendar (container, username, options) {
         return "https://urlreq.appspot.com/req?method=GET&url=" + url;
     };
 
-    return fetch(options.proxy("https://github.com/" + username)).then(response => {
+    return fetch(options.proxy("https://gitlab.com/" + username)).then(response => {
         return response.text()
     }).then(body => {
         var div = document.createElement("div");
