@@ -21,7 +21,7 @@ module.exports = function GitHubCalendar(container, username, options) {
     }
 
     options = options || {};
-    options.summary_text = options.summary_text || `Summary of pull requests, issues opened, and commits made by <a href="https://github.com/${username}" target="blank">@${username}</a>`;
+    options.summary_text = options.summary_text || `Summary of pull requests, issues opened, and commits made by <a href="https://gitlab.com/${username}" target="blank">@${username}</a>`;
 
     // We need a proxy for CORS
     // Thanks, @izuzak (https://github.com/izuzak/urlreq)
