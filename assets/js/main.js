@@ -60,5 +60,5 @@ jQuery(document).ready(function ($) {
     );
 
     /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    GitHubCalendar("#github-graph", "pkthakur01");
+    GitHubCalendar("#github-graph", "pkthakur");
 });
